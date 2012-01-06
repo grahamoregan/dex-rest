@@ -1,4 +1,5 @@
-h1. RestTest
+Rest Testing
+============
 
 This library provides a very simple wrapper around JSON content. Provide it with a java.util.Reader and it will
 convert the content to an object graph, store the results in memory and allow you to perform XPath queries against it.
@@ -16,6 +17,3 @@ The following test passes;
 
 assertEquals(Double.valueOf(3), model.count("/list"));
 
-h1.
-
-# Support XML too 
