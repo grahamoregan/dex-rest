@@ -1,0 +1,8 @@
+{
+"name":"graham",
+"one":1,
+"two":2,
+"list":["a","b","c"],
+"person":{"name":"john","age":25},
+"builds":[{"number":21,"url":"https://server/path/1/"},{"number":20,"url":"https://server/path/2/"}]
+}
