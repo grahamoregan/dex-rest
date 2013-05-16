@@ -11,9 +11,12 @@ The library uses Jackson to create an object graph from JSON content and JXPath 
 
 e.g. given the following JSON;
 
+~~~
 { "list":["a","b","c"] }
+~~~
 
 The following test passes;
 
+~~~
 assertEquals(Double.valueOf(3), model.count("/list"));
-
+~~~
