@@ -27,13 +27,13 @@ public class ObjectModel {
 
 	public static final ObjectModel create(Map<String, Object> map) {
 
-		ObjectModel response = new ObjectModel();
+		ObjectModel model = new ObjectModel();
 
-		response.map = map;
+		model.map = map;
 
-		response.context = JXPathContext.newContext(response.map);
+		model.context = JXPathContext.newContext(model.map);
 
-		return response;
+		return model;
 
 	}
 

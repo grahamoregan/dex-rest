@@ -14,9 +14,9 @@ public class ObjectModelConvertorTest {
 
 		Reader reader = new InputStreamReader(this.getClass().getResourceAsStream("/sample.json"));
 
-		ObjectModelConvertor resty = new ObjectModelConvertor();
+		ObjectModelConvertor omc = new ObjectModelConvertor();
 
-		ObjectModel response = resty.json(reader);
+		ObjectModel response = omc.json(reader);
 
 		assertNotNull(response);
 
