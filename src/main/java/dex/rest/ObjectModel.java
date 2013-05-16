@@ -1,9 +1,11 @@
 package dex.rest;
 
+import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.jxpath.JXPathContext;
 
+import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 
 /**
@@ -22,16 +24,25 @@ import com.google.common.collect.Maps;
 public class ObjectModel {
 
 	private Map<String, Object> map = Maps.newHashMap();
+	private List<Object> list = Lists.newArrayList();
 
 	private JXPathContext context;
 
 	public static final ObjectModel create(Map<String, Object> map) {
 
 		ObjectModel model = new ObjectModel();
-
 		model.map = map;
-
 		model.context = JXPathContext.newContext(model.map);
+
+		return model;
+
+	}
+
+	public static final ObjectModel create(List<Object> list) {
+
+		ObjectModel model = new ObjectModel();
+		model.list = list;
+		model.context = JXPathContext.newContext(model.list);
 
 		return model;
 
